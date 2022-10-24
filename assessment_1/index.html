@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="input-wrapper">
+        <input type="file" style="padding-bottom:12px;" id="filetag"/>
+    </div>
+    <div class="display-wrapper">
+        <div class="main-image-wrapper">
+            <div class="img-container">
+                <div class="dot" id="dot">
+                    <span class="tooltip-text">Tooltip text</span>
+                </div>
+                <img src="" id="preview"/>
+            </div>
+            <div class="image-description">
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>X Pos</th>
+                        <th>Y Pos</th>
+                        <th>Description</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    
+                      
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <p>Description</p>
+        <input type="text" name="desc-input" id="desc_input"/>
+        <div class="image-desc-buttons">
+            <button type="button" id="save">Save</button>
+            <button type="button" id="cancel">Cancel</button>
+        </div>
+    </div>
+
+<!-- <img src="" id="preview"> -->
+  <script src="image-mapper.js" defer></script>
+</body>
+</html>

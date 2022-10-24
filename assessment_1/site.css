@@ -1,0 +1,119 @@
+input[type='file']{
+    padding-bottom:10px;
+}
+.display-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.img-container {
+  /* width: 50vw; */
+  object-fit: cover;
+  object-position: 100% 100%;
+  position: relative;
+}
+.table-wrapper{
+    overflow:auto;
+    width:50vw;
+    padding-left:12px;
+    /* display: flex; */
+}
+.dot {
+    background: red;
+    border-radius: 50%;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:none;
+  }
+.tooltip-text{
+  white-space: nowrap;
+  background-color: rgba(0,0,0,0.5);
+  margin:-2px 17px;
+  padding:5px;
+  color:#fff;
+  border-radius:5px;
+  display:none;
+}
+.dot:hover .tooltip-text{
+  display:inline-block;
+}
+
+.image-description ul {
+  list-style-type: none;
+  padding:0px
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#table th {
+    position: sticky;
+    top: 0px;  /* 0px if you don't have a navbar, but something is required */
+    background: white;
+  }
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.modal{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    height:110px;
+    background-color: #ddd;
+    padding:5px;
+    display:none;
+}
+.modal input{
+    width:190px;
+}
+.image-desc-buttons{
+    display:flex;
+    justify-content: end;
+    margin:5px;
+}
+.image-desc-buttons button{
+    padding:4px 10px;
+    margin:4px;
+}
+button#save{
+    background-color:#4CAF50;
+    color: #fff;
+    border-radius:5px;
+    border: 1px solid #4CAF50;
+    cursor:pointer;
+}
+button#cancel{
+    background-color:#f44336;;
+    color: #fff;
+    border-radius:5px;
+    border: 1px solid #f44336;
+    cursor: pointer;
+}
+
+
+

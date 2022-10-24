@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <div class="label-wrapper">
+      <div class="button-group">
+        <span>GROUP BY</span>
+        <button type="button" class="groupby-buttons" data-id="hour">
+          Hour
+        </button>
+        <button type="button" class="groupby-buttons" data-id="day">Day</button>
+        <button type="button" class="groupby-buttons" data-id="week">
+          Week
+        </button>
+        <button type="button" class="groupby-buttons" data-id="month">
+          Month
+        </button>
+        <!-- <button type="button" class="groupby-buttons" data-id="month" >Year</button> -->
+      </div>
+      <div class="search-wrapper">
+        <span>Ticker:</span>
+        <input
+          type="text"
+          name="ticker_input"
+          id="ticker_input"
+          value="GOOG"
+          placeholder="Eg:AAPL"
+        />
+      </div>
+    </div>
+    <div class="label-wrapper">
+      <div class="button-group">
+        <span>LAST</span>
+        <button type="button" class="groupby-buttons active" data-id="1d">
+          1D
+        </button>
+        <button type="button" class="groupby-buttons" data-id="5d">5D</button>
+        <button type="button" class="groupby-buttons" data-id="1mo">1MO</button>
+        <button type="button" class="groupby-buttons" data-id="6mo">6MO</button>
+        <button type="button" class="groupby-buttons" data-id="ytd">YTD</button>
+        <button type="button" class="groupby-buttons" data-id="1y">1Y</button>
+        <button type="button" class="groupby-buttons" data-id="5y">5Y</button>
+        <button type="button" class="groupby-buttons" data-id="max">MAX</button>
+      </div>
+      <ul class="legend">
+        <li><span class="low"></span>Low</li>
+        <li><span class="high"></span>High</li>
+        <li><span class="close"></span>Close</li>
+    </ul>
+    </div>
+
+    <div class="chart-container" id="chart-container"></div>
+    <p>Group By will gives last 100 data points based on Selection you made</p>
+    <p>As Name Suggest Last will give us that many points</p>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"
+      integrity="sha512-RJJ1NNC88QhN7dwpCY8rm/6OxI+YdQP48DrLGe/eSAd+n+s1PXwQkkpzzAgoJe4cZFW2GALQoxox61gSY2yQfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="stock-tracker.js" defer></script>
+  </body>
+</html>
